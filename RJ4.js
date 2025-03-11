@@ -8,7 +8,8 @@ let clientes = [
     new Cliente("Gustavo", "123.456.789-00", new Endereco("SP", "São José dos Campos", "Esplanada", 123)),
     new Cliente("Gabriel", "987.654.321-00", new Endereco("SP", "São José dos Campos", "Aquarius", 423)),
     new Cliente("Marcelo", "111.222.333-44", new Endereco("SP", "São José dos Campos", "Av São João", 543)),
-    new Cliente("Rafael", "555.666.777-88", new Endereco("SP", "São José dos Campos", "Av Andrômeda", 532))
+    new Cliente("Rafael", "555.666.777-88", new Endereco("SP", "São José dos Campos", "Av Andrômeda", 532)),
+    new Cliente("Felipe", "555.632.777-84", new Endereco("SP", "São José dos Campos", "Av dos Imigrantes", 532))
 ];
 
 clientes[0].telefones.push(new Telefone('11', '9999-1111'));
@@ -22,6 +23,9 @@ clientes[2].telefones.push(new Telefone('11', '9999-6666'));
 
 clientes[3].telefones.push(new Telefone('11', '9999-7777'));
 clientes[3].telefones.push(new Telefone('11', '9999-8001'));
+
+clientes[4].telefones.push(new Telefone('11', '9999-7777'));
+clientes[4].telefones.push(new Telefone('11', '9999-8001'));
 
 clientes.forEach(cliente => empresa.adicionarCliente(cliente));
 console.log(empresa.detalhe());
